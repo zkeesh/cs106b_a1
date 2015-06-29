@@ -1,10 +1,9 @@
 /*
- * File: ConsecutiveHeads.cpp
+ * File: hello.cpp
  * --------------------------
- * Name: [TODO: enter name here]
- * Section: [TODO: enter section leader here]
- * This file is the starter project for the Consecutive Heads problem.
- * [TODO: rewrite the documentation]
+ * Name: Zach Keeshin
+ * This file has the four programs for Assignment 1
+ * for the CS 106B class.
  */
 
 #include <iostream>
@@ -40,8 +39,6 @@ int stringToInt(string str){
     }else{
         return rest * 10 + ones_place;
     }
-
-
 }
 /*
 This function converts the given int
@@ -103,12 +100,15 @@ void countHeads(){
             streak = 0;
         }
     }
-
     cout << "Total Heads: " << totalHeads << endl;
     cout << "Total Tails: " << totalTails << endl;
     cout << "Total Flips: " << counter << endl;
 }
 
+/*
+This returns whether or not the given character
+is a vowel.
+*/
 bool isVowel(char ch){
     return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'y';
 }
@@ -140,15 +140,6 @@ int countSyllables(string str){
 
 
 int main() {
-
-//    cout << "Counting syllables..." << endl;
-//    cout << countSyllables("hello") << endl;
-//    cout << countSyllables("after") << endl;
-//    cout << countSyllables("deduce") << endl;
-//    cout << countSyllables("area") << endl;
-//    cout << countSyllables("program") << endl;
-
-
     double numWords = 0;
     double numSentences = 0;
     double numSyllables = 0;
@@ -167,8 +158,6 @@ int main() {
         if(token == "." || token == "!" || token == "?"){
             numSentences++;
         }
-
-//        cout << token << endl;
         numSyllables += countSyllables(token);
     }
     if(numWords == 0 && numSentences == 0){
@@ -195,7 +184,6 @@ int main() {
 //    cout << intToString(25) << endl;
 //    cout << stringToInt("125") << endl;
 //    cout << stringToInt("55") << endl;
-
 
     return 0;
 }
