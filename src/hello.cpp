@@ -187,22 +187,6 @@ int main() {
 
     cout << "Flesch-Kincaid Grade Level: " << grade << endl;
 
-
-//
-//          int numSyllables = 0;
-//          while (scanner.hasMoreTokens()) {
-//                /* If this token is
-//                 * a word, count its syllables
-//                 * and update total.
-//                 */
-//           string token = scanner.nextToken();
-//                if (scanner.getTokenType(token) == WORD) {
-//                      cout << token << endl;
-//                      numSyllables += syllablesIn(token);
-//                }
-//    }
-//          return numSyllables;
-
 //    countHeads();
 //    cout << c(10,3) << endl;
 //    cout << c(2,2) << endl;
